@@ -1,0 +1,107 @@
+/*
+ * @Description: 
+ * @Version: 
+ * @Author: wg 2450925422
+ * @Date: 2022-06-20 09:52:27
+ * @LastEditors: Seven
+ * @LastEditTime: 2022-06-20 17:44:09
+ */
+@import (reference) '~antd/es/style/themes/index';
+
+.container {
+  // z-index: 1;
+  min-height: 100vh;
+  overflow: auto;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+  // background: @layout-body-background;
+  background: #fff;
+}
+.loginBg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 400px;
+  background-color: #0081fe;
+  background-image: url('../../../assets/u368_state0.png');
+}
+.lang {
+  width: 100%;
+  height: 40px;
+  line-height: 44px;
+  text-align: right;
+  :global(.ant-dropdown-trigger) {
+    margin-right: 24px;
+  }
+}
+
+.content {
+  position: relative;
+  top: 100px;
+  left: 50%;
+  z-index: 1;
+  width: 450px;
+  height: 550px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+:global(.ant-pro-form-login-container) {
+  border: 1px solid #e8e8e8;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ant-input {
+  height: 50px;
+}
+
+.loginInput {
+  align-items: center;
+  height: 55px;
+  font-size: 50px;
+  border-radius: 5px;
+}
+
+/* 底部版权信息 */
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  // height: 200px;
+  margin-top: 100px;
+  padding-top: 30px;
+  color: #e1e1e1;
+  font-size: 14px;
+  text-align: center;
+}
+
+// @media (min-width: @screen-md-min) {
+//   .container {
+//     background-image: url('https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg');
+//     background-repeat: no-repeat;
+//     background-position: center 110px;
+//     background-size: 100%;
+//   }
+
+//   .content {
+//     padding: 32px 0 24px;
+//   }
+// }
+
+// 更多登录方式
+// .icon {
+//   margin-left: 8px;
+//   color: rgba(0, 0, 0, 0.2);
+//   font-size: 24px;
+//   vertical-align: middle;
+//   cursor: pointer;
+//   transition: color 0.3s;
+
+//   &:hover {
+//     color: @primary-color;
+//   }
+// }
